@@ -18,3 +18,8 @@ steroids.view.navigationBar.update({
       right: [loginButton]
     }
 });
+
+function showModal() {
+  var webView = new steroids.views.WebView("/views/modalExample/show.html");
+  steroids.modal.show(webView);
+}
