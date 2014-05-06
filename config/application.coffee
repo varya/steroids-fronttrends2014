@@ -16,8 +16,13 @@ steroids.config.tabBar.tabs = [
   },
   {
     title: "Notifications"
-    icon: "icons/telescope@2x.png"
+    icon: "icons/bell.png"
     location: "http://localhost/notificationExample.html"
+  },
+  {
+    title: "FrontTrends"
+    icon: "icons/coding.png"
+    location: "http://2014.front-trends.com/"
   }
 ]
 
