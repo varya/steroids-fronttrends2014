@@ -1,5 +1,20 @@
 // Display the native navigation bar with the title "Hello World!"
-steroids.view.navigationBar.show("Hello World!");
+steroids.view.navigationBar.show("The awesome app");
 
-// Set the WebView background color to white (effective on iOS only)
-steroids.view.setBackgroundColor("#FFFFFF");
+var loginButton = new steroids.buttons.NavigationBarButton();
+loginButton.title = "the Button";
+
+loginButton.onTap = function() {
+    navigator.notification.alert(
+        'You tapped the button!',
+        function(){},
+        'the Alert',
+        'I did!'
+    );
+}
+
+steroids.view.navigationBar.update({
+    buttons: {
+      right: [loginButton]
+    }
+});
