@@ -20,9 +20,9 @@ steroids.config.tabBar.tabs = [
     location: "http://localhost/notificationExample.html"
   },
   {
-    title: "FrontTrends"
+    title: "Knowledge base"
     icon: "icons/coding.png"
-    location: "http://2014.front-trends.com/"
+    location: "http://localhost/knowledge.html"
   }
 ]
 
