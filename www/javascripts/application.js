@@ -1,6 +1,9 @@
 // Display the native navigation bar with the title "Hello World!"
 steroids.view.navigationBar.show("The awesome app");
 
+var backButton = new steroids.buttons.NavigationBarButton();
+backButton.title = "Return";
+
 var loginButton = new steroids.buttons.NavigationBarButton();
 loginButton.title = "the Button";
 
@@ -14,6 +17,8 @@ loginButton.onTap = function() {
 }
 
 steroids.view.navigationBar.update({
+    overrideBackButton: false,
+    backButton: backButton,
     buttons: {
       right: [loginButton]
     }
